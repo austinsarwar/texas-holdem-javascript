@@ -60,16 +60,7 @@ suit_color(playerOneCardOne, player_one_card_one)
 let player_one_card_two = document.getElementById("player-one-card-2");
 player_one_card_two.innerHTML = playerOneCardTwo.value + playerOneCardTwo.symbol;
 suit_color(playerOneCardTwo, player_one_card_two);
-/*
-// First card in players twos hand
-let player_two_card_one = document.getElementById("player-two-card-1");
-player_two_card_one.innerHTML = playerTwoCardOne.value + playerTwoCardOne.symbol;
-suit_color(playerTwoCardOne, player_two_card_one);
 
-// Second card in player twos hand
-let player_two_card_two = document.getElementById("player-two-card-2");
-player_two_card_two.innerHTML = playerTwoCardTwo.value + playerTwoCardTwo.symbol;
-suit_color(playerTwoCardTwo, player_two_card_two); */
 
 // Table card the river
 // Table card one
@@ -82,8 +73,42 @@ table_card_two.innerHTML = tableCardTwo.value + tableCardTwo.symbol;
 suit_color(tableCardTwo, table_card_two);
 // Table card three
 let table_card_three = document.getElementById("table-card-3");
-table_card_three.innerHTML = tableCardThree.value + tableCardThree.symbol
-suit_color(tableCardThree, table_card_three)
+table_card_three.innerHTML = tableCardThree.value + tableCardThree.symbol;
+suit_color(tableCardThree, table_card_three);
+
+let stayBtn = document.getElementById("stay-btn");
+let foldBtn = document.getElementById("fold-btn");
+
+let click_count = 0;
+foldBtn.addEventListener("click", function(e){
+    location.reload();
+})
+
+stayBtn.addEventListener("click", function (e){
+  if(click_count == 0){
+    let table_card_four = document.getElementById("table-card-4");
+    table_card_four.innerHTML = tableCardFour.value + tableCardFour.symbol;
+    suit_color(tableCardFour,table_card_four);
+  }else if(click_count == 1){
+    let table_card_five = document.getElementById("table-card-5");
+    table_card_five.innerHTML = tableCardFive.value + tableCardFive.symbol;
+    suit_color(tableCardFive,table_card_five);
+
+  }else if(click_count == 2){
+   
+    // First card in players twos hand
+    let player_two_card_one = document.getElementById("player-two-card-1");
+    player_two_card_one.innerHTML = playerTwoCardOne.value + playerTwoCardOne.symbol;
+    suit_color(playerTwoCardOne, player_two_card_one);
+
+    // Second card in player twos hand
+    let player_two_card_two = document.getElementById("player-two-card-2");
+    player_two_card_two.innerHTML = playerTwoCardTwo.value + playerTwoCardTwo.symbol;
+    suit_color(playerTwoCardTwo, player_two_card_two); 
+    
+  }
+  click_count ++;
+})
 
 
 

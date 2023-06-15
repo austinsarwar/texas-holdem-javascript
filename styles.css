@@ -9,7 +9,7 @@ body{
 }
 #poker-hands {
     position: fixed;
-    top: 38px;
+    top: 40px;
     left: -20px;
     right:100px;
     margin: 20px;
@@ -17,7 +17,7 @@ body{
   
   #poker-hands img {
     display: block;
-    height: 320px;
+    height: 380px;
     width: 350px;
   }
 

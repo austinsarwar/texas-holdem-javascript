@@ -159,5 +159,9 @@ header{
       #table-card-5{
         font-size: 30px;
       }
+      .button-containe{
+        width: 77vw;
+        margin-top: 10px;
+      }
 
 }

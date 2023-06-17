@@ -165,7 +165,8 @@ header{
       .button-container{
         
         margin-top: 10px;
-        justify-content: center;
+        justify-content: end;
+        width:73vw;
         
         
       }

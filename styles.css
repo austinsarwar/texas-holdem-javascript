@@ -144,5 +144,20 @@ header{
     #poker-hands {
         display: none;
       }
+      #table-card-1{
+        font-size: 30px;
+      }
+      #table-card-2{
+        font-size: 30px;
+      }
+      #table-card-3{
+        font-size: 30px;
+      }
+      #table-card-4{
+        font-size: 30px;
+      }
+      #table-card-5{
+        font-size: 30px;
+      }
 
 }

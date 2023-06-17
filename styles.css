@@ -139,6 +139,9 @@ header{
     width: 80vw;
     gap:10px;
 }
+#stay-btn{
+    width: 130px;
+}
 
 @media (max-width: 768px) {
     #poker-hands {
@@ -166,5 +169,5 @@ header{
         
         
       }
-
+      
 }

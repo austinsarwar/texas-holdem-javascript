@@ -166,9 +166,12 @@ header{
         
         margin-top: 10px;
         justify-content: end;
-        width:73vw;
+        width:87svw;
         
         
+      }
+      #fold-btn{
+        width:130px;
       }
       
 }

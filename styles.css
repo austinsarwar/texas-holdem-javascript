@@ -139,3 +139,10 @@ header{
     width: 80vw;
     gap:10px;
 }
+
+@media (max-width: 768px) {
+    #poker-hands {
+        display: none;
+      }
+
+}

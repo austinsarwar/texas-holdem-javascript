@@ -173,5 +173,22 @@ header{
       #fold-btn{
         width:130px;
       }
-      
+      .card{
+        height: 80px;
+        width: 60px;
+        border-radius: 5px;
+      }
+      #player-two-card-1{
+        font-size: 35px;
+      }
+      #player-two-card-2{
+        font-size: 35px;
+      }
+      #player-one-card-1{
+        font-size: 35px;
+      }
+      #player-one-card-2{
+        font-size:35px;
+
+      }
 }
